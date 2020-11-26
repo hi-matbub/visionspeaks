@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QtyControl component renders unchanged 1`] = `
+<div
+  className="d-flex justify-content-end"
+>
+  <div
+    style={
+      Object {
+        "bottom": "-1em",
+        "height": "100px",
+        "left": "1em",
+        "position": "absolute",
+        "zIndex": "2000",
+      }
+    }
+  />
+  <div
+    className="d-flex flex-column align-items-end mb-3"
+  >
+    <form
+      className="d-flex align-items-center"
+      onSubmit={[Function]}
+    >
+      <h5
+        className="p-0 m-0"
+      >
+        QTY:
+      </h5>
+      <input
+        className="border-dark mx-3 form-control"
+        defaultValue="1"
+        label="qty"
+        max="40"
+        min="1"
+        name="qty"
+        style={
+          Object {
+            "width": "fit-content",
+          }
+        }
+        type="number"
+      />
+      <button
+        className="btn btn-outline-dark qty_submit"
+        style={
+          Object {
+            "width": "125px !important",
+          }
+        }
+        type="submit"
+      >
+        Add To Cart
+      </button>
+    </form>
+  </div>
+</div>
+`;

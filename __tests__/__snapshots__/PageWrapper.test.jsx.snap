@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageWrapper renders unchanged 1`] = `
+<div
+  className="content"
+>
+  <div
+    className="d-flex justify-content-between w-100 fixed-top"
+    style={
+      Object {
+        "background": "#FFFFFF !important",
+      }
+    }
+  >
+    <nav
+      className="justify-content-between fixed-top navbar navbar-expand-lg navbar-light fixed-top"
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF !important",
+        }
+      }
+    >
+      <img
+        alt="React Bootstrap logo"
+        className="d-inline-block align-top"
+        height="75"
+        src="/logo.svg"
+      />
+      <a
+        className="navbar-brand"
+        href="/"
+      >
+        Dog-Gone Goods
+      </a>
+      <div
+        className="navbar-nav"
+        onKeyDown={[Function]}
+      >
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "background": "none",
+              "border": "0",
+            }
+          }
+          type="button"
+        >
+          <div
+            className="bg-warning scale-in-center"
+            style={
+              Object {
+                "borderRadius": "50%",
+                "height": "15px",
+                "position": "absolute",
+                "right": "14px",
+                "top": "28px",
+                "width": "15px",
+              }
+            }
+          />
+          <img
+            alt="Checkout"
+            src="/cart.png"
+            style={
+              Object {
+                "cursor": "pointer",
+                "height": "20px",
+              }
+            }
+          />
+        </button>
+      </div>
+    </nav>
+  </div>
+  <main>
+    <p>
+      Hello World
+    </p>
+  </main>
+  <footer>
+    <div
+      className="my-5 container"
+    >
+      <div
+        className="align-items-center justify-content-center row"
+      >
+        <div
+          className="col-lg-8 col-md-9 col-sm-12"
+        >
+          <h2>
+            More Info
+          </h2>
+          <div
+            className="d-flex flex-wrap"
+          >
+            <div
+              className="d-flex flex-column"
+            >
+              <button
+                className="btn btn-outline-dark mt-2 pl-1 text-left"
+                id="About"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "border": "0",
+                    "padding": "0",
+                    "width": "200px",
+                  }
+                }
+                type="button"
+              >
+                About
+              </button>
+              <button
+                className="btn btn-outline-dark mt-2 pl-1 text-left"
+                id="FAQ"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "border": "0",
+                    "padding": "0",
+                    "width": "200px",
+                  }
+                }
+                type="button"
+              >
+                FAQ
+              </button>
+              <button
+                className="btn btn-outline-dark mt-2 pl-1 text-left"
+                id="Contact"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "border": "0",
+                    "padding": "0",
+                    "width": "200px",
+                  }
+                }
+                type="button"
+              >
+                Contact
+              </button>
+            </div>
+            <div
+              className="d-flex flex-column"
+            >
+              <button
+                className="btn btn-outline-dark mt-2 pl-1 text-left"
+                id="Terms and Conditions"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "border": "0",
+                    "padding": "0",
+                    "width": "200px",
+                  }
+                }
+                type="button"
+              >
+                Terms and Conditions
+              </button>
+              <button
+                className="btn btn-outline-dark mt-2 pl-1 text-left"
+                id="Privacy Policy"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "border": "0",
+                    "padding": "0",
+                    "width": "200px",
+                  }
+                }
+                type="button"
+              >
+                Privacy Policy
+              </button>
+              <button
+                className="btn btn-outline-dark mt-2 pl-1 text-left"
+                id="Shipping and Returns"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "border": "0",
+                    "padding": "0",
+                    "width": "200px",
+                  }
+                }
+                type="button"
+              >
+                Shipping and Returns
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="d-flex justify-content-center col"
+        >
+          <p
+            className="m-5 text-center"
+          >
+            Copyright 
+            <br />
+             
+            2020
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
