@@ -48,7 +48,7 @@ const QtyControl = ({
     localStorage.setItem('billing', billing);
 
     handleUpdatedCartInState(updatedCart, billing);
-
+ 
     setAlert({
       status: 'success',
       message:

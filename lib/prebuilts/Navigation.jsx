@@ -27,8 +27,8 @@ const Navigation = ({ cart, data, handleUpdatedCartInState, currentBill }) => (
           cart={cart}
           data={data}
           currentBill={currentBill}
-          handleUpdatedCartInState={(updatedCart) =>
-            handleUpdatedCartInState(updatedCart)
+          handleUpdatedCartInState={(updatedCart, billing) =>
+            handleUpdatedCartInState(updatedCart, billing)
           }
         />
       </Nav>

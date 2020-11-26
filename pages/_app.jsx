@@ -22,8 +22,10 @@ function App({ Component, pageProps }) {
   const [currentBill, setBilling] = useState();
 
   // handles cart on event
-  const handleUpdatedCartInState = (updatedCart) =>
+  const handleUpdatedCartInState = (updatedCart, updatedBilling) => {
     setCart(JSON.parse(updatedCart));
+    setBilling(JSON.parse(updatedBilling));
+  }
 
   useEffect(() => {
     // handles cart on page refresh
@@ -81,8 +83,8 @@ function App({ Component, pageProps }) {
           data={data}
           cart={cart}
           currentBill={currentBill}
-          handleUpdatedCartInState={(updatedCart) =>
-            handleUpdatedCartInState(updatedCart)
+          handleUpdatedCartInState={(updatedCart, billing) =>
+            handleUpdatedCartInState(updatedCart, billing)
           }
           {...pageProps}
         />

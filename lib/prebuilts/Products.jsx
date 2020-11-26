@@ -21,8 +21,8 @@ const Products = ({
         cart={cart}
         product={i}
         currentBill={currentBill}
-        handleUpdatedCartInState={(updatedCart) =>
-          handleUpdatedCartInState(updatedCart)
+        handleUpdatedCartInState={(updatedCart, billing) =>
+          handleUpdatedCartInState(updatedCart, billing)
         }
       />
     ))}

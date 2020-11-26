@@ -9,8 +9,8 @@ const Index = ({ data, cart, handleUpdatedCartInState, currentBill }) => {
       data={data}
       cart={cart}
       currentBill={currentBill}
-      handleUpdatedCartInState={(updatedCart) =>
-        handleUpdatedCartInState(updatedCart)
+      handleUpdatedCartInState={(updatedCart, billing) =>
+        handleUpdatedCartInState(updatedCart, billing)
       }
     >
       {!data.store.hero ? null : (
@@ -28,8 +28,8 @@ const Index = ({ data, cart, handleUpdatedCartInState, currentBill }) => {
         products={data.products}
         cart={cart}
         currentBill={currentBill}
-        handleUpdatedCartInState={(updatedCart) =>
-          handleUpdatedCartInState(updatedCart)
+        handleUpdatedCartInState={(updatedCart, billing) =>
+          handleUpdatedCartInState(updatedCart, billing)
         }
       />
     </PageWrapper>
