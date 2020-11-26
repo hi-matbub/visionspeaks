@@ -51,9 +51,9 @@ const CheckoutPreview = ({
 
           <Col xs={10} className="d-flex flex-column">
             <Row className="align-self-end mr-2">
-              <h4 style={{ width: '100%', margin: '0' }} className="ellipse">
+              <h5 style={{ width: '100%', margin: '0' }} className="ellipse">
                 {cart[i].name}
-              </h4>
+              </h5>
             </Row>
 
             <Row className="align-self-end align-items-end mr-2">
