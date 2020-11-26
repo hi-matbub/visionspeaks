@@ -35,8 +35,8 @@ function App({ Component, pageProps }) {
     const userCart = localStorage.getItem('cart');
     setCart(JSON.parse(userCart));
     // // handles billing
-    // const billingFromStorage = localStorage.getItem('billing');
-    // setBilling(JSON.parse(billingFromStorage));
+    const billingFromStorage = localStorage.getItem('billing');
+    setBilling(JSON.parse(billingFromStorage));
   }, []);
 
   // page failed to load
