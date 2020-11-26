@@ -26,8 +26,8 @@ function App({ Component, pageProps }) {
   // handles cart on event
   const handleUpdatedCartInState = (updatedCart) => {
     setCart(JSON.parse(updatedCart));
-    console.log(calc(JSON.parse(updatedCart)))
-    calc(cart) == 0 ? setBilling(0) : setBilling(calc(cart));
+    // console.log(calc(JSON.parse(updatedCart)))
+    setBilling(calc(JSON.parse(updatedCart)));
   }
 
   useEffect(() => {
