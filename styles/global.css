@@ -55,6 +55,21 @@ h1, h2, h3, h4, h5, h6 {
     height: 100px;
     width: 100px;     
   }
+
+  h1, h2 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  span.text-muted,
+  button, 
+  p {
+    font-size: 12px !important;
+  }
+
 }
 
 .products {

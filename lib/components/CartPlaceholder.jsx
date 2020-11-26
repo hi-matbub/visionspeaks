@@ -18,7 +18,7 @@ const CartPlaceholder = ({ handleShow, isCartEmpty }) => (
           height: '15px',
           borderRadius: '50%',
           position: 'absolute',
-          top: '28px',
+          top: '18px',
           right: '14px',
         }}
       />
