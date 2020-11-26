@@ -21,6 +21,7 @@ const CheckoutForm = ({ price, onSuccessfulCheckout }) => {
       setUSD(formatUSD(total));
     }
   }, [price, total]);
+
   const stripe = useStripe();
   const elements = useElements();
 
@@ -102,7 +103,7 @@ const CheckoutForm = ({ price, onSuccessfulCheckout }) => {
 
       <SubmitButton
         disabled={isProcessing}
-        title={isProcessing ? 'Processing...' : `Pay $${USD} USD`}
+        title={isProcessing ? 'Processing...' : `Pay $${formatUSD(price)} USD`}
         className="my-4 btn-outline-dark align-self-end"
       />
     </Form>
