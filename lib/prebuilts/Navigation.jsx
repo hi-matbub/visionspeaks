@@ -17,7 +17,7 @@ const Navigation = ({ cart, data, handleUpdatedCartInState, currentBill }) => (
     >
       <img
         src={data.store.logo}
-        height="75"
+        height="50"
         className="d-inline-block align-top"
         alt="React Bootstrap logo"
       />

@@ -2,11 +2,11 @@ export default {
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    site_name: 'SiteName',
+    site_name: 'VisionSpeaks',
   },
-  twitter: {
-    handle: '@handle',
-    site: '@site',
-    cardType: 'summary_large_image',
-  },
+  // twitter: {
+  //   handle: '@handle',
+  //   site: '@site',
+  //   cardType: 'summary_large_image',
+  // },
 };
