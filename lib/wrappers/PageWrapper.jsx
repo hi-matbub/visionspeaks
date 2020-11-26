@@ -15,8 +15,8 @@ const PageWrapper = ({
       data={data}
       cart={cart}
       currentBill={currentBill}
-      handleUpdatedCartInState={(updatedCart, billing) =>
-        handleUpdatedCartInState(updatedCart, billing)
+      handleUpdatedCartInState={(updatedCart) =>
+        handleUpdatedCartInState(updatedCart)
       }
     />
     <main>{children}</main>

@@ -32,8 +32,8 @@ const Cart = ({ cart, handleUpdatedCartInState, currentBill }) => {
             currentBill={currentBill}
             handleClose={handleClose}
             handleEmptyCartNotice={handleEmptyCartNotice}
-            handleUpdatedCartInState={(updatedCart, billing) =>
-              handleUpdatedCartInState(updatedCart, billing)
+            handleUpdatedCartInState={(updatedCart) =>
+              handleUpdatedCartInState(updatedCart)
             }
           />
         )}

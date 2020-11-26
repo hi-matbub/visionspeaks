@@ -12,15 +12,13 @@ const QtyControl = ({
   const [alert, setAlert] = useState(null);
 
   const handleSubmit = (ev) => {
+    
     ev.preventDefault();
 
     let updatedCart;
-    let billing;
-    const due = product.metadata.price * ev.target.qty.value;
+    // const due = product.metadata.price * ev.target.qty.value;
 
     if (cart) {
-      const newBilling = currentBill + due;
-
       updatedCart = JSON.stringify({
         ...cart,
         [product.id]: {
@@ -29,8 +27,6 @@ const QtyControl = ({
           qty: ev.target.qty.value,
         },
       });
-
-      billing = JSON.stringify(newBilling);
     } else {
       // if cart empty, set cart
       updatedCart = JSON.stringify({
@@ -40,15 +36,12 @@ const QtyControl = ({
           qty: ev.target.qty.value,
         },
       });
-
-      billing = JSON.stringify(due);
     }
 
-    localStorage.setItem('cart', updatedCart);
-    localStorage.setItem('billing', billing);
+    localStorage.setItem('cart', updatedCart);    
 
-    handleUpdatedCartInState(updatedCart, billing);
- 
+    handleUpdatedCartInState(updatedCart);
+
     setAlert({
       status: 'success',
       message:

@@ -3,10 +3,12 @@ import React, { useEffect, useState } from 'react';
 import useSwr from 'swr';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
+import { calc } from 'lg-calc';
 import Loading from '../lib/components/Loading';
 import StripeWrapper from '../lib/wrappers/StripeWrapper';
 import FacebookPixelWrapper from '../lib/wrappers/FacebookPixelWrapper';
 import NextSEOWrapper from '../lib/wrappers/NextSEOWrapper';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/global.css';
 import '../styles/ProductPreview.css';
@@ -22,19 +24,19 @@ function App({ Component, pageProps }) {
   const [currentBill, setBilling] = useState();
 
   // handles cart on event
-  const handleUpdatedCartInState = (updatedCart, updatedBilling) => {
+  const handleUpdatedCartInState = (updatedCart) => {
     setCart(JSON.parse(updatedCart));
-    setBilling(JSON.parse(updatedBilling));
+    console.log(calc(JSON.parse(updatedCart)))
+    calc(cart) == 0 ? setBilling(0) : setBilling(calc(cart));
   }
 
   useEffect(() => {
     // handles cart on page refresh
     const userCart = localStorage.getItem('cart');
     setCart(JSON.parse(userCart));
-
-    // handles billing
-    const billingFromStorage = localStorage.getItem('billing');
-    setBilling(JSON.parse(billingFromStorage));
+    // // handles billing
+    // const billingFromStorage = localStorage.getItem('billing');
+    // setBilling(JSON.parse(billingFromStorage));
   }, []);
 
   // page failed to load
@@ -83,8 +85,8 @@ function App({ Component, pageProps }) {
           data={data}
           cart={cart}
           currentBill={currentBill}
-          handleUpdatedCartInState={(updatedCart, billing) =>
-            handleUpdatedCartInState(updatedCart, billing)
+          handleUpdatedCartInState={(updatedCart) =>
+            handleUpdatedCartInState(updatedCart)
           }
           {...pageProps}
         />

@@ -31,9 +31,10 @@ const CartModal = ({
 
       <CheckoutPreview
         cart={cart}
+        currentBill={currentBill}
         handleEmptyCartNotice={handleEmptyCartNotice}
-        handleUpdatedCartInState={(updatedCart, billing) =>
-          handleUpdatedCartInState(updatedCart, billing)
+        handleUpdatedCartInState={(updatedCart) =>
+          handleUpdatedCartInState(updatedCart)
         }
       />
 

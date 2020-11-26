@@ -7,14 +7,16 @@ import { formatUSD } from '../../utils/formatUSD';
 
 const CheckoutPreview = ({
   cart,
+  currentBill,
   handleEmptyCartNotice,
   handleUpdatedCartInState,
 }) => {
   const [cartInStorage, setCartInStorage] = useState(cart);
 
   const handleRemoveFromCart = (id) => {
+        
     const updatedCart = cartInStorage;
-
+    
     delete updatedCart[id];
 
     setCartInStorage(updatedCart);
@@ -25,12 +27,12 @@ const CheckoutPreview = ({
       // eslint-disable-next-line no-else-return
     } else {
       // func requires JSON
-      handleUpdatedCartInState(JSON.stringify(updatedCart));
-      return localStorage.setItem('cart', JSON.stringify(cartInStorage));
+      handleUpdatedCartInState(JSON.stringify(updatedCart));      
+      localStorage.setItem('cart', JSON.stringify(cartInStorage));
     }
   };
 
-  console.log(cart);
+  
   return (
     <Container>
       <Row className="d-flex align-items-center">
