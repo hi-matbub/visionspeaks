@@ -12,7 +12,7 @@ const Products = ({
 }) => (
   <Container>
     <SlimWrapper>
-      <h2 className="my-5">Products</h2>
+      <h2 className="my-5 products">Products</h2>
     </SlimWrapper>
 
     {products.map((i) => (
