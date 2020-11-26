@@ -20,7 +20,7 @@ exports[`StickyTopNavbar component renders unchanged 1`] = `
     <img
       alt="React Bootstrap logo"
       className="d-inline-block align-top"
-      height="75"
+      height="50"
       src="/logo.svg"
     />
     <a
