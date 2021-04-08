@@ -25,21 +25,27 @@ const Footer = ({ data }) => {
           <h2>More Info</h2>
           <Wrap>
             <div className="d-flex flex-column">
-              <PrimaryModal title="About">
+              {/* <PrimaryModal title="About">
                 <About />
               </PrimaryModal>
               <PrimaryModal title="FAQ">
                 <FAQ />
+              </PrimaryModal> */}
+              <PrimaryModal title="Contact Us">
+                <h3>Contact Us</h3>
+                <p>
+                  Questions regarding order status and returns please contact us at 
+                  <a
+                    href={`mailto:${store.contact}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    &nbsp;{store.contact}
+                  </a>
+                </p>
               </PrimaryModal>
-              <a
-                href={`mailto:${store.contact}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Pill title="Contact" />
-              </a>
             </div>
-            <div className="d-flex flex-column">
+            {/* <div className="d-flex flex-column">
               <PrimaryModal title="Terms and Conditions">
                 <TermsAndConditions />
               </PrimaryModal>
@@ -49,7 +55,7 @@ const Footer = ({ data }) => {
               <PrimaryModal title="Shipping and Returns">
                 <ShippingAndReturns />
               </PrimaryModal>
-            </div>
+            </div> */}
           </Wrap>
         </SlimWrapper>
 
